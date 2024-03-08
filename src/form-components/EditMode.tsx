@@ -22,11 +22,14 @@ export function EditMode(): JSX.Element {
             <div>
                 <label>
                     Edit Mode:
-                    <input
-                        type="checkbox"
-                        checked={editMode}
-                        onChange={handleSwitchChange}
-                    />
+                    <label className="form-switch">
+                        <input
+                            type="checkbox"
+                            checked={editMode}
+                            onChange={handleSwitchChange}
+                        />
+                        <span className="slider round"></span>
+                    </label>
                 </label>
             </div>
             {editMode ? (
